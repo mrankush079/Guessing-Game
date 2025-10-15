@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot"> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Number Guessing Game</h1>
+
+    <button id="toggleDark">Toggle Dark Mode</button>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <input type="number" id="maxInput" placeholder="Enter max number" />
+    <button id="startBtn">Start Game</button>
+
+    <div id="gameArea" class="hidden">
+      <input type="number" id="guessInput" placeholder="Your guess" />
+      <button id="guessBtn">Submit Guess</button>
+      <p id="feedback"></p>
+      <p id="attempts"></p>
+      <button id="playAgainBtn" class="hidden">Play Again</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
